@@ -73,7 +73,7 @@ else()
   endif()
   get_filename_component(CUTENSOR_ROOT ${CUTENSOR_LIBRARY_DIR} DIRECTORY)
 
-  set(CUTENSOR_INCLUDE_DIR "${CUTENSOR_ROOT}/include" CACHE PATH "cuTENSOR include directory")
+  set(CUTENSOR_INCLUDE_DIR "${CUTENSOR_ROOT}/include" CACHE PATH "cuTENSOR include directory" FORCE)
 endif()
 
 message(STATUS "Found cuTENSOR: ${CUTENSOR_LIB}")
